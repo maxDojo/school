@@ -6,7 +6,6 @@ import { Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core'
 import faker from 'faker'
 import React from 'react'
-import { useEffect } from 'react'
 
 const useStyle = makeStyles((theme)=>({
     rooot:{
@@ -59,7 +58,7 @@ export default function StudentCard() {
                                                
                     </Grid>
                         <Grid item>
-                            <Typography variant ='caption' style={{fontWeight:'bold', color:'GrayText'}}>Mechanical Engineering</Typography>
+                            <Typography variant ='caption' style={{fontWeight:'500', color:'GrayText'}}>Mechanical Engineering</Typography>
                         </Grid>
                         <Grid item>
                             <Typography style={{color:'GrayText'}}  variant ='caption'>500 Level</Typography>
