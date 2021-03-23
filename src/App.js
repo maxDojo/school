@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import StudentCard from './components/StudentCard';
+import 'fontsource-roboto'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { green } from '@material-ui/core/colors';
 
+const theme = createMuiTheme({
+  palette:{
+    primary: {
+      main: green[500]
+    }
+  }
+})
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit tghis <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <StudentCard />
+      </div>
+    </ThemeProvider>
   );
 }
 
