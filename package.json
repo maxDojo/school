@@ -9,10 +9,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "faker": "^5.4.0",
-<<<<<<< HEAD
-=======
     "fontsource-roboto": "^4.0.0",
->>>>>>> a923936dbc5809a61a7fe79f41365ab6d44fc3a3
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
