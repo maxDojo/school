@@ -8,6 +8,7 @@ export const colors = {
   mainText: "#101010",
   fadeText: "#555555",
   siderBg: "#373B53",
+  cardBg: "#ffffff",
 };
 
 export const dimensions = {

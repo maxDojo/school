@@ -3,7 +3,6 @@ import UiContext from "../../context/ui";
 import {
   AppBar,
   IconButton,
-  TextField,
   Toolbar,
   InputBase,
   Avatar,

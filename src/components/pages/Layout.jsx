@@ -9,6 +9,7 @@ import { colors, dimensions } from "../../globalStyles";
 import Appbar from "../pageLayout/Appbar";
 import Sider from "../pageLayout/Sider";
 import TitleBar from "../pageLayout/TitleBar";
+import MainContent from "../pageLayout/MainContent";
 
 function Layout() {
   return (
@@ -33,7 +34,7 @@ function Layout() {
           style={{ padding: 20, paddingTop: 0, width: "100%", height: "100%" }}
         >
           <TitleBar />
-          <MainBodyText> Welcome to the App</MainBodyText>
+          <MainContent />
         </div>
       </div>
     </div>

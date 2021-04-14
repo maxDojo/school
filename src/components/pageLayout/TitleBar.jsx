@@ -1,11 +1,13 @@
 import React from "react";
-import { makeStyles, Button, Hidden } from "@material-ui/core";
+import { makeStyles, Hidden } from "@material-ui/core";
 import {
   MainHeading,
   MainBodyText,
   SubHeading,
   BodyText,
 } from "../../typography";
+
+import Button from "../basic/ActionButton";
 
 const classes = makeStyles((theme) => ({
   container: {
@@ -38,10 +40,12 @@ function TitleBar() {
           <BodyText>View Demographics and General Info Here</BodyText>
         </Hidden>
       </div>
-      <div className={styles.pageActions}>
-        <Button>Manage Users</Button>
-        <Button>Manage Staff</Button>
-      </div>
+      <Hidden mdDown implementation="js">
+        <div className={styles.pageActions}>
+          <Button>Manage Users</Button>
+          <Button>Manage Staff</Button>
+        </div>
+      </Hidden>
     </div>
   );
 }

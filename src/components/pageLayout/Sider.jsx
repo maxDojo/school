@@ -20,6 +20,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import FolderOpenIcon from "@material-ui/icons/FolderOpen";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import DescriptionIcon from "@material-ui/icons/Description";
+import SettingsIcon from "@material-ui/icons/Settings";
 
 import { dimensions, colors } from "../../globalStyles";
 import { SmallText } from "../../typography";
@@ -97,32 +98,43 @@ function ResponsiveDrawer(props) {
         height: "100%",
         backgroundColor: colors.siderBg,
         alignItems: "center",
+        justifyContent: "space-between",
       }}
     >
       <Divider />
-      <div className={classes.iconContainer} onClick={() => alert("hi")}>
-        <FolderOpenIcon className={classes.menuIcon} />
-        <SmallText tiny bold color={colors.fadeText}>
-          View Files
-        </SmallText>
+      <div style={{ flex: 1 }}>
+        <div className={classes.iconContainer}>
+          <FolderOpenIcon className={classes.menuIcon} />
+          <SmallText tiny bold color={colors.fadeText}>
+            View Files
+          </SmallText>
+        </div>
+        <div className={classes.iconContainer}>
+          <BarChartIcon className={classes.menuIcon} />
+          <SmallText tiny bold color={colors.fadeText}>
+            Dashboard
+          </SmallText>
+        </div>
+        <div className={classes.iconContainer}>
+          <MailIcon className={classes.menuIcon} />
+          <SmallText tiny bold color={colors.fadeText}>
+            Mail
+          </SmallText>
+        </div>
+        <div className={classes.iconContainer}>
+          <DescriptionIcon className={classes.menuIcon} />
+          <SmallText tiny bold color={colors.fadeText}>
+            Records
+          </SmallText>
+        </div>
       </div>
-      <div className={classes.iconContainer}>
-        <BarChartIcon className={classes.menuIcon} />
-        <SmallText tiny bold color={colors.fadeText}>
-          Dashboard
-        </SmallText>
-      </div>
-      <div className={classes.iconContainer}>
-        <MailIcon className={classes.menuIcon} />
-        <SmallText tiny bold color={colors.fadeText}>
-          Mail
-        </SmallText>
-      </div>
-      <div className={classes.iconContainer}>
-        <DescriptionIcon className={classes.menuIcon} />
-        <SmallText tiny bold color={colors.fadeText}>
-          Records
-        </SmallText>
+      <div>
+        <div className={classes.iconContainer}>
+          <SettingsIcon className={classes.menuIcon} />
+          <SmallText tiny bold color={colors.fadeText}>
+            Settings
+          </SmallText>
+        </div>
       </div>
     </div>
   );
